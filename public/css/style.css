@@ -1036,7 +1036,7 @@ nav .menuBar {
     .grid-container .icons .iconLink:nth-child(3){
         top: 10%;
         left: 50%;
-        transform: translate(-50%, -10%);
+        transform: translate(-50%, -10%)  rotate(-90deg);
     }
     .grid-container .icons .iconLink:nth-child(4){
         top: 90%;
