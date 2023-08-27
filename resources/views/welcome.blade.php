@@ -291,3 +291,7 @@
     <!-- Pastki qism end -->
 
 @endsection
+
+@section('script')
+    <script src="{{ asset('js/script.js') }}"></script>
+@endsection

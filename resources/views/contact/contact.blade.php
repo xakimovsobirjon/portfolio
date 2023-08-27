@@ -47,3 +47,34 @@
 
 
 @endsection
+
+@section('script')
+    <script>
+
+        function navigation() {
+        const btn = document.querySelector('.menuBar');
+        const navigation = document.querySelector('.navigation');
+        const navigationItems = document.querySelectorAll('.navigation a');
+
+
+
+        navigationItems.forEach(navItem => {
+        navItem.addEventListener('click', () => {
+        btn.classList.remove('active');
+        navigation.classList.remove('active');
+        })
+        })
+        btn.addEventListener('click', () => {
+        btn.classList.toggle('active')
+        navigation.classList.toggle('active')
+        })
+
+
+
+        }
+
+        navigation()
+
+
+    </script>
+@endsection

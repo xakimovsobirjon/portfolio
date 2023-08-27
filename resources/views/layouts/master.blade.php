@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
     @yield('style')
@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <a href="{{ route('index') }}" class="brand text-decoration-none">
                     <!-- LOGOTIP UCHUN -->
-                    <img src="./img/logo.png" class="img-fluid" alt="logoType">
+                    <img src="{{ asset('img/logo.png') }}" class="img-fluid" alt="logoType">
                     <!-- Navbar Logo Name -->
                     Sobirjon Dev
                 </a>
@@ -45,6 +45,5 @@
 
 @livewireScripts
 @yield('script')
-<script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
