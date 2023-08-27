@@ -8,7 +8,7 @@
         <section class="home" id="home">
             <div class="grid-container">
                 <div class="content">
-                    <h1>Hello! I'm <br> Sobirjonn</h1>
+                    <h1>Hello! I'm <br> Sobirjon</h1>
                     <h3>Backend Developer</h3>
                     <!-- href dagi panjarani o'rniga resume manzili kiritiladi -->
                     <button><a target="_blank" href="./resume/Resume.pdf">Get Resume &nbsp;<i class="fa fa-download"></i></a></button>
