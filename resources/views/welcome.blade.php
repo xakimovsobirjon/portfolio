@@ -244,8 +244,8 @@
             </div>
         </section>
 
-
-        <section class="works" id="work">
+        @if(\App\Models\Work::all()->count()>0)
+            <section class="works" id="work">
             <span class="title-section">|| &nbsp;&nbsp; My works</span>
             <div class="work">
                 <h2 class="area-title content-title">My Complate Projects</h2>
@@ -257,13 +257,15 @@
                 </div>
             </div>
         </section>
+        @endif
 
-
-        <section class="favourite" id="company">
-            <span class="title-section">|| &nbsp;&nbsp; Favourite Clients</span>
-            <h2 class="area-title content-title">Work With Trusted Company</h2>
-            @livewire('company-livewire')
-        </section>
+        @if(\App\Models\Company::all()->count()>0)
+            <section class="favourite" id="company">
+                <span class="title-section">|| &nbsp;&nbsp; Favourite Clients</span>
+                <h2 class="area-title content-title">Work With Trusted Company</h2>
+                @livewire('company-livewire')
+            </section>
+        @endif
 
     </div>
     <!-- Asosiy qism end -->

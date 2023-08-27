@@ -32,8 +32,12 @@
                     <a href="{{ route('index') }}#about-us" class="text-decoration-none">About Us</a>
                     <a href="{{ route('index') }}#service" class="text-decoration-none">Service</a>
                     <a href="{{ route('index') }}#skills" class="text-decoration-none">Skills</a>
-                    <a href="{{ route('index') }}#work" class="text-decoration-none">Work</a>
-                    <a href="{{ route('index') }}#company" class="text-decoration-none">Company</a>
+                    @if(\App\Models\Work::all()->count()>0)
+                        <a href="{{ route('index') }}#work" class="text-decoration-none">Work</a>
+                    @endif
+                    @if(\App\Models\Company::all()->count()>0)
+                        <a href="{{ route('index') }}#company" class="text-decoration-none">Company</a>
+                    @endif
                     <a href="{{ route('contact') }}" class="text-decoration-none">Contact</a>
                 </div>
             </nav>
