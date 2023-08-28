@@ -296,4 +296,24 @@
 
 @section('script')
     <script src="{{ asset('js/script.js') }}"></script>
+
+    @if(\App\Models\Work::all()->count()>0)
+        <script>
+
+            function workMore() {
+                const workContainer = document.querySelector(".work-container")
+                const moreBtn = document.querySelector("#more")
+                const btnBox = document.querySelector(".btn-box")
+
+
+                btnBox.onclick = function () {
+                    workContainer.classList.toggle("height")
+                    moreBtn.classList.toggle("close")
+                }
+            }
+            workMore()
+
+        </script>
+    @endif
+
 @endsection

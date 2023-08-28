@@ -7,13 +7,11 @@
 
     <table class="table">
         <thead>
-        <th>Id</th>
         <th>Name</th>
         <th>Action</th>
         </thead>
         @foreach($permissions as $permission)
             <tbody>
-            <td>{{$permission->id}}</td>
             <td>{{$permission->name}}</td>
             <td>
 

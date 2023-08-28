@@ -7,7 +7,6 @@
 
     <table class="table">
         <thead>
-            <th>Id</th>
             <th>Name</th>
             <th>Email</th>
             <th>Roles</th>
@@ -15,7 +14,6 @@
         </thead>
         @foreach($users as $user)
             <tbody>
-                <td>{{$user->id}}</td>
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
                 <td>

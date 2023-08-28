@@ -7,14 +7,12 @@
 
     <table class="table">
         <thead>
-        <th>Id</th>
         <th>Name</th>
         <th>Permissions</th>
         <th>Action</th>
         </thead>
         @foreach($roles as $role)
             <tbody>
-            <td>{{$role->id}}</td>
             <td>{{$role->name}}</td>
             <td>
                 @foreach($role->permissions as $key => $item)

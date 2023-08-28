@@ -11,19 +11,6 @@ let toggle = document.querySelector('.toggle'),
 
 
 
-function workMore() {
-    const workContainer = document.querySelector(".work-container")
-    const moreBtn = document.querySelector("#more")
-    const btnBox = document.querySelector(".btn-box")
-
-
-    btnBox.onclick = function () {
-        workContainer.classList.toggle("height")
-        moreBtn.classList.toggle("close")
-    }
-}
-workMore()
-
 
 
 function navigation() {
@@ -43,9 +30,6 @@ function navigation() {
         btn.classList.toggle('active')
         navigation.classList.toggle('active')
     })
-
-
-
 }
 
 navigation()
@@ -73,18 +57,9 @@ function navigationEduExp() {
     // })
     leftItems.forEach((i, o) => i.onclick = function () {
         rightItems[o].classList.toggle("opening")
-
     })
 }
 navigationEduExp()
-
-
-
-
-
-
-
-
 
 
 
@@ -115,14 +90,6 @@ function navigationEduExpBtns() {
     }
 }
 navigationEduExpBtns()
-
-
-
-
-
-
-
-
 
 
 

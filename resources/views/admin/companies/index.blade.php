@@ -7,13 +7,11 @@
 
     <table class="table">
         <thead>
-        <th>Id</th>
         <th>Logo</th>
         <th>Action</th>
         </thead>
         @foreach($companies as $company)
             <tbody>
-            <td>{{$company->id}}</td>
             <td>
                 <img src="{{ asset('/images/company/'.$company->logo) }}" alt="1" style="width: 50px; height: 50px;">
             </td>

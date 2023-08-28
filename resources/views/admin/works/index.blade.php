@@ -7,7 +7,6 @@
 
     <table class="table">
         <thead>
-        <th>Id</th>
         <th>Image</th>
         <th>Title</th>
         <th>Link Title</th>
@@ -16,7 +15,6 @@
         </thead>
         @foreach($works as $work)
             <tbody>
-            <td>{{$work->id}}</td>
             <td>
                 <img src="{{ asset('/images/work/'.$work->image) }}" alt="1" style="width: 50px; height: 50px;">
             </td>
