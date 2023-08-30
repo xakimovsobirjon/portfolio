@@ -1380,7 +1380,7 @@ nav .menuBar {
     }
     .works .work-container {
         overflow: hidden;
-        height: 400px;
+        height: 375px;
     }
     .works .work-container.height {
         overflow: visible;
