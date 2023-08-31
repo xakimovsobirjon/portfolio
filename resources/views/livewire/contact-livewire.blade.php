@@ -4,9 +4,11 @@
             <x-input-error :messages="$errors->get('name')" style="color: #FF0000"/>
         </div>
         <div class="fluid"><input wire:model="email" type="email" placeholder="Email">
-            <x-input-error :messages="$errors->get('email')" style="color: #FF0000"/></div>
+            <x-input-error :messages="$errors->get('email')" style="color: #FF0000"/>
+        </div>
         <div class="fluid"><input wire:model="phone" type="tel" placeholder="Phone">
-            <x-input-error :messages="$errors->get('phone')" style="color: #FF0000"/></div>
+            <x-input-error :messages="$errors->get('phone')" style="color: #FF0000"/>
+        </div>
         <div class="fluid"><input wire:model="subject" type="text" placeholder="Subject">
             <x-input-error :messages="$errors->get('subject')" style="color: #FF0000"/>
         </div>

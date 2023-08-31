@@ -12,7 +12,7 @@ class ContactLivewire extends Component
     public $rules=[
         'name'=>'required|min:2',
         'email'=>'required|email',
-        'phone'=>'required',
+        'phone'=>'required|min:4',
         'subject'=>'required|min:2',
         'comment' => 'required|min:5',
     ];
@@ -21,7 +21,7 @@ class ContactLivewire extends Component
     {
         $this->validate();
 
-        Mail::send('email',
+        Mail::send('contact.email',
             array(
                 'name' => $this->name,
                 'email' => $this->email,
@@ -38,6 +38,7 @@ class ContactLivewire extends Component
         $this->success = 'Thank you for reaching out to us!';
 
         $this->clearFields();
+
 
     }
 
