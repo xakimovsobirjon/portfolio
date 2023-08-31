@@ -30,18 +30,7 @@
             <h2>If you have any project or need help. Contact me</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting emndustry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print only five centuries, but also the leap into electronic.</p>
         </div>
-        <div class="input-box">
-            <div class="fluid"><input type="text" placeholder="Name"></div>
-            <div class="fluid"><input type="email" placeholder="Email"></div>
-            <div class="fluid"><input type="tel" placeholder="Phone"></div>
-            <div class="fluid"><input type="text" placeholder="Subject"></div>
-        </div>
-        <div class="comment-box-with-button">
-            <div class="fluid">
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="message"></textarea>
-                <button id="sending">Send</button>
-            </div>
-        </div>
+        <livewire:contact-livewire></livewire:contact-livewire>
     </div>
 </div>
 

@@ -250,7 +250,7 @@
             <div class="work">
                 <h2 class="area-title content-title">My Complate Projects</h2>
                 <div class="work-container">
-                        @livewire('work-livewire')
+                    <livewire:work-livewire></livewire:work-livewire>
                     <div class="btn-box">
                         <button id="more">More</button>
                     </div>
@@ -263,7 +263,7 @@
             <section class="favourite" id="company">
                 <span class="title-section">|| &nbsp;&nbsp; Favourite Clients</span>
                 <h2 class="area-title content-title">Work With Trusted Company</h2>
-                @livewire('company-livewire')
+                <livewire:company-livewire></livewire:company-livewire>
             </section>
         @endif
 
@@ -275,17 +275,17 @@
         <div class="footer-container-box">
             <div class="grid-box">
                 <!-- saytning eng pastki footer qismdagi ma'lumotlar -->
-                <div class="col"><a href="https://t.me/sobirjon_dev"><i class="fa fa-telegram"> Telegram</i></a></div>
-                <div class="col"><a href="https://www.instagram.com/sobirjon_dev"><i class="fa fa-instagram"> Instagram</i></a></div>
-                <div class="col"><a href="https://www.facebook.com/profile.php?id=100074357748224"><i class="fa fa-facebook-official"> Facebook</i></a></div>
-                <div class="col"><a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/"><i class="fa fa-linkedin"> LinkedIn</i></a></div>
-                <div class="col"><a href="mailto: xakimovsobirjon@mail.ru"><i class="fa fa-envelope"> E-mail</i></a></div>
-                <div class="col"><a href="tel:+998934293572"><i class="fa fa-phone"> +998 93 429 35 72</i></a></div>
+                <div class="col"><a target="_blank" href="https://t.me/sobirjon_dev"><i class="fa fa-telegram"> Telegram</i></a></div>
+                <div class="col"><a target="_blank" href="https://www.instagram.com/sobirjon_dev"><i class="fa fa-instagram"> Instagram</i></a></div>
+                <div class="col"><a target="_blank" href="https://www.facebook.com/profile.php?id=100074357748224"><i class="fa fa-facebook-official"> Facebook</i></a></div>
+                <div class="col"><a target="_blank" href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/"><i class="fa fa-linkedin"> LinkedIn</i></a></div>
+                <div class="col"><a target="_blank" href="mailto: xakimovsobirjon@mail.ru"><i class="fa fa-envelope"> E-mail</i></a></div>
+                <div class="col"><a target="_blank" href="tel:+998934293572"><i class="fa fa-phone"> +998 93 429 35 72</i></a></div>
             </div>
             <!-- Qo'shimcha content uchun -->
             <div class="content-box">
                 <p>
-
+                    
                 </p>
             </div>
         </div>
