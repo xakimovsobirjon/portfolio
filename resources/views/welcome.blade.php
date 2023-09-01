@@ -41,36 +41,24 @@
                         <li class="resume-tab-list-single-item">
                             <div class="content">
                                 <div class="left">
-                                    <span id="oneSpan">2009-2010 <span id="orient"><</span></span>
+                                    <span id="oneSpan">2010-2021 <span id="orient"><</span></span>
                                 </div>
                                 <div class="right">
-                                    <h3>Bachelor of Business Administration</h3>
-                                    <span>National University of Uzbekistan, Tashkent</span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.</p>
+                                    <h3>School education</h3>
+                                    <span>32nd school and 6th school of Balıkchi district</span>
+                                    <p>Between 2010 and 2021, I studied for the 8 years at the 32nd general secondary school in Balıkchi district and 3 years at the 6th specialized state general school boarding school. My school days were wonderful.</p>
                                 </div>
                             </div>
                         </li>
                         <li class="resume-tab-list-single-item">
                             <div class="content">
                                 <div class="left">
-                                    <span id="oneSpan">2012-2014 <span id="orient"><</span></span>
+                                    <span id="oneSpan">2021-Now <span id="orient"><</span></span>
                                 </div>
                                 <div class="right">
-                                    <h3>Masters of Business Administration</h3>
+                                    <h3>Bachelor of Archival Studies</h3>
                                     <span>National University of Uzbekistan, Tashkent</span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="resume-tab-list-single-item">
-                            <div class="content">
-                                <div class="left">
-                                    <span id="oneSpan">2015-2018 <span id="orient"><</span></span>
-                                </div>
-                                <div class="right">
-                                    <h3>Bachelor of Graphic Arts</h3>
-                                    <span>National University of Uzbekistan, Tashkent</span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.</p>
+                                    <p>From 2021 until now, I am studying part-time in the Department of Archival Studies at the Faculty of History of the National University of Uzbekistan named after Mirzo Ulugbek. In my free time from studying, I do programming.</p>
                                 </div>
                             </div>
                         </li>
@@ -79,36 +67,12 @@
                         <li class="resume-tab-list-single-item">
                             <div class="content">
                                 <div class="left">
-                                    <span id="oneSpan">2016-2018 <span id="orient"><</span></span>
+                                    <span id="oneSpan">2022-Now <span id="orient"><</span></span>
                                 </div>
                                 <div class="right">
-                                    <h3>Web Designer</h3>
-                                    <span>Graphic Dev</span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="resume-tab-list-single-item">
-                            <div class="content">
-                                <div class="left">
-                                    <span id="oneSpan">2018-2019 <span id="orient"><</span></span>
-                                </div>
-                                <div class="right">
-                                    <h3>Junior Web Developer</h3>
-                                    <span>Acme Lab</span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="resume-tab-list-single-item">
-                            <div class="content">
-                                <div class="left">
-                                    <span id="oneSpan">2019-2020 <span id="orient"><</span></span>
-                                </div>
-                                <div class="right">
-                                    <h3>Senior Web Developer</h3>
-                                    <span>Devtwist</span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.</p>
+                                    <h3>Junior developer</h3>
+                                    <span>Backend Developer</span>
+                                    <p> I have learned Php programming language and completed 3 projects using Laravel framework.</p>
                                 </div>
                             </div>
                         </li>
@@ -285,7 +249,7 @@
             <!-- Qo'shimcha content uchun -->
             <div class="content-box">
                 <p>
-                    
+
                 </p>
             </div>
         </div>
