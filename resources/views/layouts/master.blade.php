@@ -30,7 +30,7 @@
                 <div class="navigation">
                     <a href="{{ route('index') }}#home" class="text-decoration-none">Home</a>
                     <a href="{{ route('index') }}#about-us" class="text-decoration-none">About Us</a>
-                    <a href="{{ route('index') }}#service" class="text-decoration-none">Service</a>
+{{--                    <a href="{{ route('index') }}#service" class="text-decoration-none">Service</a>--}}
                     <a href="{{ route('index') }}#skills" class="text-decoration-none">Skills</a>
                     @if(\App\Models\Work::all()->count()>0)
                         <a href="{{ route('index') }}#work" class="text-decoration-none">Work</a>

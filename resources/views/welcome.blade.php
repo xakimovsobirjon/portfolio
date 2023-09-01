@@ -46,7 +46,7 @@
                                 <div class="right">
                                     <h3>School education</h3>
                                     <span>32nd school and 6th school of Balıkchi district</span>
-                                    <p>Between 2010 and 2021, I studied for the 8 years at the 32nd general secondary school in Balıkchi district and 3 years at the 6th specialized state general school boarding school. My school days were wonderful.</p>
+                                    <p>Between 2010 and 2021, I studied for the 8 years at the 32nd general secondary school in Balıkchi district and 3 years at the 6th specialized state general school boarding school. My school days were wonderful. I finished school with good grades.</p>
                                 </div>
                             </div>
                         </li>
@@ -72,7 +72,7 @@
                                 <div class="right">
                                     <h3>Junior developer</h3>
                                     <span>Backend Developer</span>
-                                    <p> I have learned Php programming language and completed 3 projects using Laravel framework.</p>
+                                    <p> I have learned Php programming language and completed 3 projects using Laravel framework. I am currently working on other projects.</p>
                                 </div>
                             </div>
                         </li>
@@ -82,68 +82,68 @@
         </section>
 
 
-        <section class="service" id="service">
-            <span class="title-section">|| &nbsp;&nbsp; My service</span>
-            <h2 class="area-title">Service Provide For My Clients.</h2>
+{{--        <section class="service" id="service">--}}
+{{--            <span class="title-section">|| &nbsp;&nbsp; My service</span>--}}
+{{--            <h2 class="area-title">Service Provide For My Clients.</h2>--}}
 
-            <div class="card-container">
-                <div class="card-items">
-                    <div class="card order-1">
-                        <div class="card-icon">
-                            <i class="fa fa-database"></i>
-                        </div>
-                        <!-- Yo'nalish nomi -->
-                        <div class="card-title">
-                            <h1 class="title">Data Base Developing</h1>
-                        </div>
-                        <!-- Yo'nalish bo'yicha bilimlar -->
-                        <div class="card-heading">
-                            <p style="--a:0">>> MySql</p>
-                            <p style="--a:1">>> Mongo</p>
-                            <p style="--a:2">>> Kafka</p>
-                            <p style="--a:3">>> SQS</p>
-                            <p style="--a:4">>> ArangoDB</p>
-                        </div>
-                    </div>
+{{--            <div class="card-container">--}}
+{{--                <div class="card-items">--}}
+{{--                    <div class="card order-1">--}}
+{{--                        <div class="card-icon">--}}
+{{--                            <i class="fa fa-database"></i>--}}
+{{--                        </div>--}}
+{{--                        <!-- Yo'nalish nomi -->--}}
+{{--                        <div class="card-title">--}}
+{{--                            <h1 class="title">Data Base Developing</h1>--}}
+{{--                        </div>--}}
+{{--                        <!-- Yo'nalish bo'yicha bilimlar -->--}}
+{{--                        <div class="card-heading">--}}
+{{--                            <p style="--a:0">>> MySql</p>--}}
+{{--                            <p style="--a:1">>> Mongo</p>--}}
+{{--                            <p style="--a:2">>> Kafka</p>--}}
+{{--                            <p style="--a:3">>> SQS</p>--}}
+{{--                            <p style="--a:4">>> ArangoDB</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="card order-2">
-                        <div class="card-icon">
-                            <i class="fa fa-code"></i>
-                        </div>
-                        <!-- Yo'nalish nomi -->
-                        <div class="card-title">
-                            <h1 class="title">Backend Developing</h1>
-                        </div>
-                        <!-- Yo'nalish bo'yicha bilimlar -->
-                        <div class="card-heading">
-                            <p style="--a:0">>> Ruby on Rails</p>
-                            <p style="--a:1">>> ASP.NET</p>
-                            <p style="--a:2">>> Redis</p>
-                            <p style="--a:3">>> Node JS</p>
-                            <p style="--a:4">>> PHP</p>
-                        </div>
-                    </div>
+{{--                    <div class="card order-2">--}}
+{{--                        <div class="card-icon">--}}
+{{--                            <i class="fa fa-code"></i>--}}
+{{--                        </div>--}}
+{{--                        <!-- Yo'nalish nomi -->--}}
+{{--                        <div class="card-title">--}}
+{{--                            <h1 class="title">Backend Developing</h1>--}}
+{{--                        </div>--}}
+{{--                        <!-- Yo'nalish bo'yicha bilimlar -->--}}
+{{--                        <div class="card-heading">--}}
+{{--                            <p style="--a:0">>> Ruby on Rails</p>--}}
+{{--                            <p style="--a:1">>> ASP.NET</p>--}}
+{{--                            <p style="--a:2">>> Redis</p>--}}
+{{--                            <p style="--a:3">>> Node JS</p>--}}
+{{--                            <p style="--a:4">>> PHP</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="card order-3">
-                        <div class="card-icon">
-                            <i class="fa fa-mobile-phone"></i>
-                        </div>
-                        <!-- Yo'nalish nomi -->
-                        <div class="card-title">
-                            <h1 class="title">Mobile Developing</h1>
-                        </div>
-                        <!-- Yo'nalish bo'yicha bilimlar -->
-                        <div class="card-heading">
-                            <p style="--a:0">>> Java</p>
-                            <p style="--a:1">>> Cotlin</p>
-                            <p style="--a:2">>> Flutter</p>
-                            <p style="--a:3">>> Swift</p>
-                            <p style="--a:4">>> Objective C</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+{{--                    <div class="card order-3">--}}
+{{--                        <div class="card-icon">--}}
+{{--                            <i class="fa fa-mobile-phone"></i>--}}
+{{--                        </div>--}}
+{{--                        <!-- Yo'nalish nomi -->--}}
+{{--                        <div class="card-title">--}}
+{{--                            <h1 class="title">Mobile Developing</h1>--}}
+{{--                        </div>--}}
+{{--                        <!-- Yo'nalish bo'yicha bilimlar -->--}}
+{{--                        <div class="card-heading">--}}
+{{--                            <p style="--a:0">>> Java</p>--}}
+{{--                            <p style="--a:1">>> Cotlin</p>--}}
+{{--                            <p style="--a:2">>> Flutter</p>--}}
+{{--                            <p style="--a:3">>> Swift</p>--}}
+{{--                            <p style="--a:4">>> Objective C</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
 
         <section class="skills" id="skills">
