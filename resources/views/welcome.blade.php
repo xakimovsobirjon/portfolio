@@ -16,7 +16,7 @@
                 </div>
                 <!-- Carusel -->
                 <div class="portret">
-                    <img src="{{ asset('img/portrait-hero.webp') }}" alt="1255">
+                    <img src="{{ asset('img/me.jpg') }}" alt="1255">
                     <div class="icons">
                         <div class="iconLink" style="--i:0"><a target="_blank" href="https://www.facebook.com/profile.php?id=100074357748224"><i class="fa fa-facebook"></i></a></div>
                         <div class="iconLink" style="--i:1"><a target="_blank" href="https://wa.me/+998934293572"><i class="fa fa-whatsapp"></i></a></div>
@@ -72,7 +72,7 @@
                                 <div class="right">
                                     <h3>Junior developer</h3>
                                     <span>Backend Developer</span>
-                                    <p> I have learned Php programming language and completed 3 projects using Laravel framework. I am currently working on other projects.</p>
+                                    <p> I learned Php programming language and its Laravel framework. I have successfully completed my 3 projects in Laravel. I am currently working on other projects.</p>
                                 </div>
                             </div>
                         </li>
