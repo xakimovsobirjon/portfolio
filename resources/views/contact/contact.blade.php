@@ -28,7 +28,7 @@
         <span>|| &nbsp;&nbsp; Get In Touch</span>
         <div class="text-box">
             <h2>If you have any project or need help. Contact me</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting emndustry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print only five centuries, but also the leap into electronic.</p>
+            <p>This will allow you to send me your requests and suggestions. It will definitely reach me. Leave your contact information!</p>
         </div>
         <livewire:contact-livewire></livewire:contact-livewire>
     </div>

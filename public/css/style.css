@@ -1432,7 +1432,7 @@ nav .menuBar {
     }
     .contact-container .input-box {
         grid-template-columns: auto;
-        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-rows: 70px 70px 70px 70px;
     }
     /* Contact rwd */
 }
@@ -1650,7 +1650,7 @@ nav .menuBar {
     }
     .contact-container .input-box {
         grid-template-columns: auto;
-        grid-template-rows: 40px 40px 40px 40px;
+        grid-template-rows: 60px 60px 60px 60px;
     }
     /* Contact rwd */
 }
