@@ -35,7 +35,8 @@ class ContactLivewire extends Component
             }
         );
 
-        $this->success = 'Thank you for reaching out to us!';
+        $this->dispatch('send_success',['send'=>$this->success]);
+        $this->success = 'Send again';
 
         $this->clearFields();
 

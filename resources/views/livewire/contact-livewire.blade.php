@@ -20,4 +20,18 @@
             <button wire:click="send" id="sending">{{ $success }}</button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+
+        window.addEventListener('send_success', event => {
+            Swal.fire({
+                title: "Your message has been sent successfully.",
+                text: "Thank you for reaching out to us!",
+                icon: "success"
+            });
+        })
+
+
+
+    </script>
 </div>
