@@ -350,7 +350,7 @@ h6 {
     width: 350px;
     /* Reduced specific size constraint to fit container better if needed */
     z-index: 2;
-    border-radius: 20px;
+    border-radius: 50%;
     /* Floating Animation */
     animation: float 6s ease-in-out infinite;
 }
@@ -535,15 +535,16 @@ h6 {
 }
 
 .project-image-wrapper {
-    height: 250px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
 
 .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
 
@@ -583,6 +584,7 @@ h6 {
 
 .company-logo img {
     max-height: 100px;
+    max-width: 100px;
     filter: grayscale(100%) brightness(200%);
     /* Make logos white/grey */
     transition: var(--transition-fast);

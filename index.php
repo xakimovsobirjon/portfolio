@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobirjon - Portfolio</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -19,7 +20,9 @@
         <header>
             <nav>
                 <a href="#home" class="brand">
-                    <span style="font-size: 1.5rem; font-weight: bold; color: azure; margin-left:10px;">Sobirjon</span>
+                    <span style="font-size: 1.5rem; font-weight: bold; color: azure; margin-left:10px;">
+                        <img src="./img/logo.png" alt="logo">
+                    </span>
                 </a>
                 
                 <div class="navigation">
@@ -67,7 +70,7 @@
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=100074357748224" class="social-link">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
-                        <a target="_blank" href="https://wa.me/+998934293572" class="social-link">
+                        <a target="_blank" href="https://wa.me/+998950431903" class="social-link">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -162,9 +165,10 @@
                             ['name' => 'HTML', 'percent' => 92],
                             ['name' => 'CSS', 'percent' => 90],
                             ['name' => 'Bootstrap/Tailwind', 'percent' => 85],
-                            ['name' => 'PHP', 'percent' => 75],
+                            ['name' => 'JavaScript', 'percent' => 70],
+                            ['name' => 'PHP', 'percent' => 85],
                             ['name' => 'Laravel', 'percent' => 85],
-                            ['name' => 'JavaScript', 'percent' => 65],
+                            ['name' => 'MySQL', 'percent' => 80],
                             ['name' => 'Telegram Bot API', 'percent' => 80],
                         ];
                     ?>
@@ -205,9 +209,21 @@
                 <?php
                     $works = [
                         [
+                            'title' => 'LC-UP',
+                            'image' => 'lc-up.png',
+                            'link' => 'lc-up.com',
+                            'link_title' => 'View Project'
+                        ],
+                        [
                             'title' => 'Savdo Platform',
-                            'image' => 'savdo.png', // Placeholder
+                            'image' => 'savdo.png',
                             'link' => 'savdo.online',
+                            'link_title' => 'View Project'
+                        ],
+                        [
+                            'title' => 'Floow',
+                            'image' => 'floow.png',
+                            'link' => 'floow.app',
                             'link_title' => 'View Project'
                         ],
                     ];
@@ -248,7 +264,8 @@
                 <?php
                     // Placeholder company logos
                     $companies = [
-                        ['logo' => 'savdo.png'],
+                        ['logo' => 'urfan.png'],
+                        ['logo' => 'mindox.webp'],
                     ];
                 ?>
 
