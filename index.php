@@ -242,11 +242,11 @@
                 <?php endforeach; ?>
             </div>
             
-            <div class="text-center mt-4">
+            <!-- <div class="text-center mt-4">
                  <button id="more" class="btn-outline">
                     Show More
                  </button>
-            </div>
+            </div> -->
         </div>
     </section>
 
