@@ -17,15 +17,13 @@
 <body>
     <!-- Header/Navigation -->
     <section class="header">
-        <header>
+        <div class="container">
             <nav>
                 <a href="#home" class="brand">
-                    <span style="font-size: 1.5rem; font-weight: bold; color: azure; margin-left:10px;">
-                        <img src="./img/logo.png" alt="logo">
-                    </span>
+                    <img src="./img/logo.png" alt="logo">
                 </a>
                 
-                <div class="navigation">
+                <div class="navigation ps-4 mb-0">
                     <a href="#home">Home</a>
                     <a href="#about-us">About</a>
                     <a href="#skills">Skills</a>
@@ -34,10 +32,10 @@
                 </div>
                 
                 <div class="menuBar">
-                    <i class="fa fa-bars" style="color: white; font-size: 1.5rem;"></i>
+                    <i class="fa fa-bars"></i>
                 </div>
             </nav>
-        </header>
+        </div>
     </section>
 
     <!-- Hero Section -->
@@ -48,7 +46,7 @@
 
         <div class="container hero-content">
             <div class="hero-text">
-                <span class="date-badge" style="display:inline-block; margin-bottom: 1rem; padding: 5px 15px; background: rgba(59,130,246,0.1); border-radius: 20px;">Welcome to my portfolio</span>
+                <span class="date-badge">Welcome to my portfolio</span>
                 <h1>
                     Hello! I'm <br>
                     <span class="gradient-text">Sobirjon</span>
@@ -57,10 +55,10 @@
                 
                 <div class="hero-actions">
                     <a href="./resume/Resume.pdf" target="_blank" class="btn-primary">
-                        Get Resume <i class="fa fa-download" style="margin-left: 10px;"></i>
+                        Get Resume <i class="fa fa-download"></i>
                     </a>
                     
-                    <div class="social-icons">
+                    <div class="social-icons-hero">
                         <a target="_blank" href="https://t.me/sobirjon_dev" class="social-link">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
@@ -69,6 +67,9 @@
                         </a>
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=100074357748224" class="social-link">
                             <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/" class="social-link">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <a target="_blank" href="https://wa.me/+998950431903" class="social-link">
                             <i class="fa-brands fa-whatsapp"></i>
@@ -86,7 +87,7 @@
         </div>
     </section>
 
-    <!-- About / Education / Experience -->
+    <!-- Education & Experience -->
     <section id="about-us" class="section bg-dark">
         <div class="container">
             <div class="text-center mb-8">
@@ -105,7 +106,6 @@
                     </div>
                     
                     <div class="timeline">
-                        <!-- Item 1 -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <span class="date-badge">2021 - Present</span>
@@ -113,7 +113,6 @@
                             <p class="timeline-text mb-2">National University of Uzbekistan, Tashkent</p>
                             <p class="timeline-text">Currently studying part-time while focusing on programming.</p>
                         </div>
-                        <!-- Item 2 -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <span class="date-badge">2010 - 2021</span>
@@ -127,17 +126,16 @@
                 <!-- Experience -->
                 <div class="card">
                      <div class="card-header">
-                        <div class="card-icon" style="color: var(--accent-color); background-color: rgba(168, 85, 247, 0.1);">
+                        <div class="card-icon">
                             <i class="fa fa-briefcase"></i>
                         </div>
                         <h3>Experience</h3>
                     </div>
 
                     <div class="timeline">
-                        <!-- Item 1 -->
                         <div class="timeline-item">
-                            <div class="timeline-dot" style="border-color: var(--accent-color);"></div>
-                            <span class="date-badge" style="color: var(--accent-color);">2022 - Present</span>
+                            <div class="timeline-dot"></div>
+                            <span class="date-badge">2022 - Present</span>
                             <h4 class="timeline-limit">Junior Backend Developer</h4>
                             <p class="timeline-text mb-2">Freelance / Self-employed</p>
                             <p class="timeline-text">Learned PHP and Laravel framework. Successfully completed 3 projects and currently working on new ones.</p>
@@ -197,7 +195,7 @@
         </div>
     </section>
 
-    <!-- Projects Section (Static Data) -->
+    <!-- Projects Section -->
     <section id="work" class="section bg-dark">
         <div class="container">
              <div class="text-center mb-8">
@@ -235,9 +233,9 @@
                              <img src="./img/<?php echo $work['image']; ?>" alt="<?php echo $work['title']; ?>" class="project-image">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title" style="color: white;"><?php echo $work['title']; ?></h3>
+                            <h3 class="project-title"><?php echo $work['title']; ?></h3>
                             <a target="_blank" href="https://<?php echo $work['link']; ?>" class="project-link">
-                                <?php echo $work['link_title']; ?> <i class="fa fa-external-link" style="margin-left: 5px;"></i>
+                                <?php echo $work['link_title']; ?> <i class="fa fa-external-link"></i>
                             </a>
                         </div>
                     </div>
@@ -252,7 +250,7 @@
         </div>
     </section>
 
-    <!-- Trusted Companies (Static Data) -->
+    <!-- Trusted Companies -->
     <section id="company" class="section">
         <div class="container">
             <div class="text-center mb-8">
@@ -262,7 +260,6 @@
             
             <div class="company-list">
                 <?php
-                    // Placeholder company logos
                     $companies = [
                         ['logo' => 'urfan.png'],
                         ['logo' => 'mindox.webp'],
@@ -278,7 +275,6 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -288,19 +284,20 @@
                     <p style="color: var(--text-secondary); margin-top: 0.5rem;">© 2025 All rights reserved.</p>
                 </div>
                 
-                <div class="social-icons">
+                <div class="footer-socials">
                     <a href="https://t.me/sobirjon_dev" class="social-link"><i class="fa-brands fa-telegram"></i></a>
                     <a href="https://www.instagram.com/sobirjon_dev" class="social-link"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100074357748224" class="social-link"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://wa.me/+998950431903" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 
                  <div class="footer-contact">
-                    <a href="mailto:xakimovsobirjon@mail.ru">
-                        <i class="fa fa-envelope" style="margin-right: 5px;"></i> xakimovsobirjon@mail.ru
+                    <a href="mailto:xakimovsobirjon@mail.ru" class="footer-contact-item">
+                        <i class="fa fa-envelope"></i> xakimovsobirjon@mail.ru
                     </a>
-                    <a href="tel:+998950431903">
-                        <i class="fa fa-phone" style="margin-right: 5px;"></i> +998 95 043 19 03
+                    <a href="tel:+998950431903" class="footer-contact-item">
+                        <i class="fa fa-phone"></i> +998 95 043 19 03
                     </a>
                 </div>
             </div>
@@ -315,17 +312,11 @@
              const moreBtn = document.getElementById('more');
              if(moreBtn) {
                  moreBtn.addEventListener('click', () => {
-                     const container = document.querySelector('.projects-grid');
-                     if(container) {
-                         moreBtn.style.display = 'none';
-                     }
+                     // Since we only have static items in this demo, just hiding the button for now 
+                     // or showing a message could be enough. The user's code just hid it if grid existed.
+                     moreBtn.style.display = 'none';
                  });
              }
-             
-             // Mobile Menu Toggle logic
-             // I'm inferring classes here but without a navbar in the code above, it might be incomplete.
-             // I notice the original code referred to .menu-toggle. 
-             // I should probably add a navbar in the header since it was present in the JS logic.
         });
     </script>
 </body>
