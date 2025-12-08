@@ -136,9 +136,9 @@
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <span class="date-badge">2022 - Present</span>
-                            <h4 class="timeline-limit">Junior Backend Developer</h4>
-                            <p class="timeline-text mb-2">Freelance / Self-employed</p>
-                            <p class="timeline-text">Learned PHP and Laravel framework. Successfully completed 3 projects and currently working on new ones.</p>
+                            <h4 class="timeline-limit">Web Backend Developer</h4>
+                            <p class="timeline-text mb-2">Urfan LLC</p>
+                            <p class="timeline-text">Working as a Web Backend Developer at Urfan LLC since 2022.</p>
                         </div>
                     </div>
                 </div>
@@ -312,8 +312,6 @@
              const moreBtn = document.getElementById('more');
              if(moreBtn) {
                  moreBtn.addEventListener('click', () => {
-                     // Since we only have static items in this demo, just hiding the button for now 
-                     // or showing a message could be enough. The user's code just hid it if grid existed.
                      moreBtn.style.display = 'none';
                  });
              }
