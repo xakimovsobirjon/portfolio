@@ -261,14 +261,16 @@
             <div class="company-list">
                 <?php
                     $companies = [
-                        ['logo' => 'urfan.png'],
-                        ['logo' => 'mindox.webp'],
+                        ['logo' => 'urfan.png', 'url' => 'urfan.tech'],
+                        ['logo' => 'mindox.webp', 'url' => 'mindox.jp'],
                     ];
                 ?>
 
                 <?php foreach($companies as $company): ?>
                     <div class="company-logo">
-                         <img src="./img/<?php echo $company['logo']; ?>" alt="Company">
+                        <a href="https://<?php echo $company['url']; ?>" target="_blank">
+                            <img src="./img/<?php echo $company['logo']; ?>" alt="Company">
+                        </a>
                     </div>
                 <?php endforeach; ?>
             </div>
