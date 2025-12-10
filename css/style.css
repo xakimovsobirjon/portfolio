@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Colors */
-    --bg-primary: #050505;
-    --bg-secondary: #0f0f0f;
-    --bg-tertiary: #171717;
+    /* Colors - Deep Premium Dark Theme */
+    --bg-primary: #030014;
+    --bg-secondary: #0f0728;
+    --bg-tertiary: #1a103c;
 
-    --card-bg: rgba(23, 23, 23, 0.6);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --card-hover-border: rgba(255, 255, 255, 0.15);
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.05);
+    --card-hover-border: rgba(255, 255, 255, 0.1);
 
     --text-primary: #ffffff;
-    --text-secondary: #a3a3a3;
-    --text-muted: #737373;
+    --text-secondary: #b4b0c4;
+    --text-muted: #7a768a;
 
-    /* Accents */
-    --primary: #3b82f6;
-    --primary-glow: rgba(59, 130, 246, 0.5);
-    --secondary: #8b5cf6;
-    --secondary-glow: rgba(139, 92, 246, 0.5);
+    /* Accents - Vibrant & Neon */
+    --primary: #7000ff;
+    --primary-glow: rgba(112, 0, 255, 0.6);
+    --secondary: #00ddff;
+    --secondary-glow: rgba(0, 221, 255, 0.6);
 
-    --gradient-main: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-    --gradient-text: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+    --gradient-main: linear-gradient(135deg, #7000ff 0%, #00ddff 100%);
+    --gradient-text: linear-gradient(135deg, #c4b5fd 0%, #67e8f9 100%);
+
+    /* Effects */
+    --noise-bg: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
 
     /* Variables */
     --header-height: 80px;
@@ -30,7 +33,28 @@
     --radius-md: 16px;
     --radius-sm: 8px;
 
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Smooth Scroll */
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
 }
 
 /* Reset & Base */
@@ -219,11 +243,38 @@ h6 {
     width: 600px;
     height: 600px;
     background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
-    filter: blur(80px);
-    opacity: 0.25;
+    filter: blur(100px);
+    opacity: 0.4;
     z-index: 0;
     pointer-events: none;
     border-radius: 50%;
+}
+
+/* Click Splash/Firework Effect */
+.click-particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10001;
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--secondary);
+    animation: splash 1s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+@keyframes splash {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(0);
+        opacity: 0;
+    }
 }
 
 .blob-1 {
@@ -413,29 +464,90 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 1000px;
 }
 
 .hero-img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     z-index: 2;
-    border: 4px solid rgba(255, 255, 255, 0.05);
-    animation: float 6s ease-in-out infinite;
-    box-shadow: 0 0 50px rgba(59, 130, 246, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px rgba(112, 0, 255, 0.3);
+    animation: morph 8s ease-in-out infinite, float 6s ease-in-out infinite;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s ease;
+}
+
+.hero-img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 80px rgba(0, 221, 255, 0.5);
+    transform: scale(1.05);
 }
 
 .hero-img-bg {
     position: absolute;
-    width: 110%;
-    height: 110%;
-    background: var(--gradient-main);
-    filter: blur(60px);
-    border-radius: 50%;
-    opacity: 0.2;
+    inset: -20px;
+    background: conic-gradient(from 0deg, transparent 0%, var(--primary) 20%, var(--secondary) 50%, transparent 60%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: spin 10s linear infinite;
+    filter: blur(20px);
+    opacity: 0.5;
     z-index: 1;
-    animation: pulse 4s ease-in-out infinite alternate;
+}
+
+.hero-img-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: spin-reverse 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 /* Grids */
@@ -445,20 +557,38 @@ h6 {
     gap: 30px;
 }
 
-/* Cards */
+/* Cards & Interactables Base Transform Logic */
+.card,
+.project-card,
+.hero-img,
+.btn-primary,
+.social-link,
+.btn-outline,
+.skill-item {
+    /* Initialize variables */
+    --rotateX: 0deg;
+    --rotateY: 0deg;
+    --translateX: 0px;
+    --translateY: 0px;
+    --scale: 1;
+
+    transform: perspective(1000px) rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate(var(--translateX), var(--translateY)) scale(var(--scale));
+    transition: transform 0.1s cubic-bezier(0.1, 0.1, 0.1, 1), box-shadow 0.3s ease;
+    will-change: transform;
+}
+
 .card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: var(--radius-lg);
     padding: 40px;
     backdrop-filter: blur(10px);
-    transition: var(--transition);
 }
 
 .card:hover {
-    transform: translateY(-5px);
     border-color: var(--card-hover-border);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Transform handled by JS variables */
 }
 
 .card-header {

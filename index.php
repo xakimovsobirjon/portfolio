@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Effects -->
+    <div class="noise-overlay"></div>
+    <div class="cursor-follower"></div>
     <!-- Header/Navigation -->
     <section class="header">
         <div class="container">
@@ -49,9 +52,9 @@
                 <span class="date-badge">Welcome to my portfolio</span>
                 <h1>
                     Hello! I'm <br>
-                    <span class="gradient-text">Sobirjon</span>
+                    <span class="gradient-text reveal-text visible">Sobirjon</span>
                 </h1>
-                <h3 class="hero-subtitle">Backend Developer</h3>
+                <h3 class="hero-subtitle reveal-text visible stagger-delay-1">Backend Developer</h3>
                 
                 <div class="hero-actions">
                     <a href="./resume/Resume.pdf" target="_blank" class="btn-primary">
