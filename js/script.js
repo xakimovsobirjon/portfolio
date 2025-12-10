@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tiltElements = document.querySelectorAll('.hero-img, .card, .project-card');
 
     // Elements that get Magnetic
-    const magneticElements = document.querySelectorAll('.btn-primary, .social-link, .btn-outline, .card, .project-card, .skill-item, .company-logo');
+    const magneticElements = document.querySelectorAll('.btn-primary, .social-link, .btn-outline, .card, .project-card, .skill-item, .company-logo, .cta-box');
 
     // Helper to set variables safely
     const setTransformVars = (el, vars) => {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let strength = 20; // Default pixel movement strength
 
             // Weaker for large cards
-            if (el.classList.contains('card') || el.classList.contains('project-card') || el.classList.contains('skill-item')) {
+            if (el.classList.contains('card') || el.classList.contains('project-card') || el.classList.contains('skill-item') || el.classList.contains('cta-box')) {
                 strength = 5;
             }
 
