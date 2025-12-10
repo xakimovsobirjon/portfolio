@@ -724,7 +724,7 @@ h6 {
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    /* transform handled by JS */
     border-color: var(--card-hover-border);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }

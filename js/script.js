@@ -112,11 +112,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const xTilt = (0.5 - xPct) * 10; // Reduced tilt for better usability
             const yTilt = (0.5 - yPct) * -10;
 
-            el.style.transform = `perspective(1000px) rotateX(${yTilt}deg) rotateY(${xTilt}deg) scale(1.02)`;
+            // Disable transition during movement for responsiveness, unless we just entered
+            if (!el.isEntering) {
+                el.style.transition = 'none';
+            }
+
+            setTransformVars(el, {
+                '--rotateX': `${yTilt}deg`,
+                '--rotateY': `${xTilt}deg`,
+                '--scale': '1.02'
+            });
+        });
+
+        el.addEventListener('mouseenter', () => {
+            el.isEntering = true;
+            el.style.transition = 'transform 0.4s cubic-bezier(0.23, 1, 0.32, 1)';
+
+            // Remove the smooth transition flag after it completes
+            setTimeout(() => {
+                el.isEntering = false;
+            }, 400);
         });
 
         el.addEventListener('mouseleave', () => {
-            el.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+            // Enable smooth transition on exit
+            el.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+
+            setTransformVars(el, {
+                '--rotateX': '0deg',
+                '--rotateY': '0deg',
+                '--scale': '1'
+            });
         });
     });
 
