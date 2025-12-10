@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tiltElements = document.querySelectorAll('.hero-img, .card, .project-card');
 
     // Elements that get Magnetic
-    const magneticElements = document.querySelectorAll('.btn-primary, .social-link, .btn-outline, .card, .project-card, .skill-item');
+    const magneticElements = document.querySelectorAll('.btn-primary, .social-link, .btn-outline, .card, .project-card, .skill-item, .company-logo');
 
     // Helper to set variables safely
     const setTransformVars = (el, vars) => {

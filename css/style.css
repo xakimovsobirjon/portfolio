@@ -776,25 +776,73 @@ h6 {
 }
 
 /* Companies */
+/* Companies */
 .company-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
-    opacity: 0.6;
+    position: relative;
+}
+
+.company-logo {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.company-logo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--primary) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+    transform: translate(var(--translateX), var(--translateY));
+    /* Controlled by JS magnetic if needed, or simple hover */
+    pointer-events: none;
+}
+
+.company-logo a {
+    position: relative;
+    z-index: 2;
+    display: block;
 }
 
 .company-logo img {
-    max-height: 100px;
-    max-width: 100px;
-    filter: grayscale(100%) brightness(200%);
-    transition: var(--transition-fast);
+    max-height: 50px;
+    /* Smaller, cleaner size */
+    width: auto;
+    filter: grayscale(100%) brightness(150%);
+    opacity: 0.7;
+    transition: all 0.4s ease;
+}
+
+.company-logo:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.company-logo:hover::before {
+    opacity: 0.15;
 }
 
 .company-logo:hover img {
     filter: none;
     opacity: 1;
+    transform: scale(1.1);
 }
 
 /* Footer */
