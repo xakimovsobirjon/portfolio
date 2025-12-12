@@ -227,6 +227,18 @@
                             'link' => 'floow.app',
                             'link_title' => 'View Project'
                         ],
+                        [
+                            'title' => 'POS for Book store',
+                            'image' => 'bookstore.jpg',
+                            'link' => 'ziyobook.vercel.app',
+                            'link_title' => 'View Project'
+                        ],
+                        [
+                            'title' => 'Youtube clone',
+                            'image' => 'youtube.png',
+                            'link' => 'sammitube-test.vercel.app',
+                            'link_title' => 'View Project'
+                        ],
                     ];
                 ?>
 
