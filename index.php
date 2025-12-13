@@ -228,6 +228,12 @@
                             'link_title' => 'View Project'
                         ],
                         [
+                            'title' => 'My AI',
+                            'image' => 'ai.png',
+                            'link' => 'my-ai-ten-pied.vercel.app',
+                            'link_title' => 'View Project'
+                        ],
+                        [
                             'title' => 'POS for Book store',
                             'image' => 'bookstore.jpg',
                             'link' => 'ziyobook.vercel.app',
