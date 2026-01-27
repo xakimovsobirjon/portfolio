@@ -65,12 +65,6 @@
                         <a target="_blank" href="https://t.me/sobirjon_dev" class="social-link">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/sobirjon_dev" class="social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100074357748224" class="social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
                         <a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/" class="social-link">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
@@ -309,8 +303,6 @@
                 
                 <div class="footer-socials">
                     <a href="https://t.me/sobirjon_dev" class="social-link"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://www.instagram.com/sobirjon_dev" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100074357748224" class="social-link"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
                     <a target="_blank" href="https://wa.me/+998950431903" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
