@@ -239,6 +239,12 @@
                             'link' => 'sammitube-test.vercel.app',
                             'link_title' => 'View Project'
                         ],
+                        [
+                            'title' => 'Anti Reklama Bot',
+                            'image' => 'anti-reklama-bot.png',
+                            'link' => 'https://t.me/dev0212_bot',
+                            'link_title' => 'View Project'
+                        ],
                     ];
                 ?>
 
