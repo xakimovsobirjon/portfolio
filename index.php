@@ -242,7 +242,7 @@
                         [
                             'title' => 'Anti Reklama Bot',
                             'image' => 'anti-reklama-bot.png',
-                            'link' => 'https://t.me/dev0212_bot',
+                            'link' => 't.me/dev0212_bot',
                             'link_title' => 'View Project'
                         ],
                     ];
