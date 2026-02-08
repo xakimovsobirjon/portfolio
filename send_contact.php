@@ -3,17 +3,18 @@ header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = strip_tags(trim($_POST["name"]));
-    $contact = strip_tags(trim($_POST["contact"]));
+    $phone = strip_tags(trim($_POST["phone"]));
+    $email = strip_tags(trim($_POST["email"]));
     $message = strip_tags(trim($_POST["message"]));
 
-    if (empty($name) || empty($contact) || empty($message)) {
+    if (empty($name) || empty($phone) || empty($email) || empty($message)) {
         http_response_code(400);
         echo json_encode(["status" => "error", "message" => "Please fill all fields."]);
         exit;
     }
 
-    // Basic email validation if the contact field contains '@'
-    if (strpos($contact, '@') !== false && !filter_var($contact, FILTER_VALIDATE_EMAIL)) {
+    // Email validation
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
         echo json_encode(["status" => "error", "message" => "Please enter a valid email address."]);
         exit;
@@ -26,7 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $text = "📩 *New Contact Message*\n\n";
     $text .= "👤 *Name:* " . $name . "\n";
-    $text .= "📞 *Contact:* " . $contact . "\n";
+    $text .= "📞 *Phone:* " . $phone . "\n";
+    $text .= "📧 *Email:* " . $email . "\n";
     $text .= "📝 *Message:* \n" . $message;
 
     $url = "https://api.telegram.org/bot$botToken/sendMessage";

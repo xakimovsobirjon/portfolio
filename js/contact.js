@@ -18,19 +18,23 @@ $(document).ready(function() {
             }
         });
 
-        var contactInput = $('#contact');
-        var contactVal = contactInput.val().trim();
-        // Check if it looks like an email but is invalid
-        if(contactVal.includes('@')) {
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if(!emailRegex.test(contactVal)) {
-                 contactInput.addClass('is-invalid');
-                 contactInput.siblings('.invalid-feedback').text('Please enter a valid email format.');
-                 isValid = false;
-            } else {
-                 // Reset message if valid
-                 contactInput.siblings('.invalid-feedback').text('Please enter a valid phone or email.');
-            }
+        var phoneInput = $('#phone');
+        var phoneVal = phoneInput.val().trim();
+        // Basic phone validation (allows +, spaces, and digits)
+        var phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+        if(!phoneRegex.test(phoneVal) && phoneVal.length < 7) { 
+             phoneInput.addClass('is-invalid');
+             isValid = false;
+        }
+
+        var emailInput = $('#email');
+        var emailVal = emailInput.val().trim();
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if(!emailRegex.test(emailVal)) {
+             emailInput.addClass('is-invalid');
+             isValid = false;
         }
 
         if(!isValid) {

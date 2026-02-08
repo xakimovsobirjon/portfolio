@@ -324,9 +324,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="contact">Contact (Phone/Email)</label>
-                        <input type="text" id="contact" name="contact" class="form-control" placeholder="Your Phone or Email" required>
-                        <div class="invalid-feedback">Please enter a valid phone or email.</div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="+998 90 123 45 67" required>
+                        <div class="invalid-feedback">Please enter a valid phone number.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
                     </div>
 
                     <div class="form-group">
