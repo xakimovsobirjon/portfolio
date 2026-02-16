@@ -28,14 +28,7 @@ $(document).ready(function() {
              isValid = false;
         }
 
-        var emailInput = $('#email');
-        var emailVal = emailInput.val().trim();
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-        if(!emailRegex.test(emailVal)) {
-             emailInput.addClass('is-invalid');
-             isValid = false;
-        }
+
 
         if(!isValid) {
             return;

@@ -329,11 +329,7 @@
                         <div class="invalid-feedback">Please enter a valid phone number.</div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" required>
-                        <div class="invalid-feedback">Please enter a valid email address.</div>
-                    </div>
+
 
                     <div class="form-group">
                         <label for="message">Message</label>
