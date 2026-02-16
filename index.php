@@ -356,7 +356,7 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <h2>Sobirjon Dev</h2>
+                    <h2>Sobirjon Xakimov</h2>
                     <p style="color: var(--text-secondary); margin-top: 0.5rem;">© 2025 All rights reserved.</p>
                 </div>
 
