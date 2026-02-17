@@ -65,10 +65,10 @@
                     </a>
 
                     <div class="social-icons-hero">
-                        <a target="_blank" href="https://t.me/sobirjon_dev" class="social-link">
+                        <a target="_blank" href="https://t.me/sobirjon_xakimov" class="social-link">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/" class="social-link">
+                        <a href="https://www.linkedin.com/in/sobirjonxakimov/" class="social-link">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <a target="_blank" href="https://wa.me/+998950431903" class="social-link">
@@ -108,7 +108,7 @@
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <span class="date-badge">2021 - Present</span>
+                            <span class="date-badge">2021 - 2026</span>
                             <h4 class="timeline-limit">Bachelor of Archival Studies</h4>
                             <p class="timeline-text mb-2">National University of Uzbekistan, Tashkent</p>
                             <p class="timeline-text">Currently studying part-time while focusing on programming.</p>
@@ -357,8 +357,8 @@
                 </div>
 
                 <div class="footer-socials">
-                    <a href="https://t.me/sobirjon_dev" class="social-link"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://www.linkedin.com/in/sobirjon-xakimov-a7b51723a/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://t.me/sobirjon_xakimov" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/sobirjonxakimov/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
                     <a target="_blank" href="https://wa.me/+998950431903" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
 
